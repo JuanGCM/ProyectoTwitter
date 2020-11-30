@@ -22,7 +22,8 @@ export class LoginComponent implements OnInit {
     // Llamar a un servicio que mande la petición de login
     // a la API.
     this.authService.login(this.usuario).subscribe(respuesta => {
-        alert('API TOKEN ' + respuesta.token);
+        alert('API TOKEN ' + respuesta.token);  
+             
     });
   }
 
